@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 # YPU NEED TO PUT YOUR API KEY HERE
-openai.api_key = "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"
+openai.api_key = "API key here"
 
 @app.route('/api/chat', methods=['POST', 'OPTIONS'])
 @cross_origin()
