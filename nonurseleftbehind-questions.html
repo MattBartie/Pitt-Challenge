@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionare</title>
+    <style>
+            body {
+               font-family: "Futura", Arial, sans-serif;
+                background-image: linear-gradient(45deg, #BDFFF7, #DAB5FF);
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                display: flex;
+				align-items: center;
+				height: 100vh;
+				
+
+            }
+
+            .container {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                padding: 10px;
+                width: 600px;
+            }
+
+
+
+            h1 {
+                text-align: center;
+            }
+
+            label {
+                display: block;
+                margin: 10px 0;
+            }
+
+
+            input[type="submit"] {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                cursor: pointer;
+				margin-top: 30px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+
+
+        </style>
+        </head>
+        <body>
+        <div class="container">
+            <h1>We want to hear more from you!</h1>
+            <form action="nonurseleftbehind-main.html" method="post">
+                <label for="What do you deal with on a day-to-day basis">What do you deal with on a day-to-day basis:(Hold Ctr or Command to select multiple)</label>
+                <select id="feeling" name="feeling" multiple>
+                    <option value="Anxiety">Anxiety</option>
+                    <option value="Depression">Depression</option>
+                    <option value="OCD">OCD</option>
+                    <option value="Bipolar">Bipolar</option>
+                    <option value="Eating Disorder">Eating Disorder</option>
+                    <option value="ADHD">ADHD</option>
+                    <option value="ADD">ADD</option>
+                    <option value="Lack of Motivation">Lack of Motivation</option>
+                    <option value="Loneliness">Loneliness</option>
+                    <option value="Anger">Anger</option>
+                    <option value="Resentment">Resentment</option>
+                    <option value="Frustration">Frustration</option>
+                    </select>
+                <br>
+                <label for="Coping mechanisms">Coping mechanisms:(Hold Ctr or Command to select multiple)</label>
+                <select id="mechanisms" name="mechanisms" multiple>
+                    <option value="Games">Games</option>
+                    <option value="Movies/tv">Movies/tv</option>
+                    <option value="Books">Books</option>
+                    <option value="Exercise">Exercise</option>
+                    <option value="Socializing">Socializing</option>
+                    <option value="Music">Music</option>
+                    </select>
+                <br>
+                <input type="submit" value="All good! Back to home">
+            </form>
+
+
+
+
+        </div>
+
+    </body>
+    </html>

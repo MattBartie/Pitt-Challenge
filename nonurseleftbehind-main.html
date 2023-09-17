@@ -1,0 +1,264 @@
+
+<html>
+
+  <head>
+      <title>About Us</title>
+      <style>
+          body {
+                font-family: "Futura", Arial, sans-serif;
+                background-image: linear-gradient(45deg, #BDFFF7, #DAB5FF);
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                height: flex;
+				        align: center;
+          }
+
+        .picture {
+            text-align: center;
+        }
+
+
+
+          .button {
+              padding-top: 10px;
+              margin-left: 20px;
+              display: inline-block;
+              cursor: pointer;
+          }
+
+          .buttonDropdown {
+              position: relative;
+              display: inline-block;
+          }
+
+          .buttonDropdown-content {
+              display: none;
+              position: absolute;
+              background-color: pink;
+              width: 200px; /* Adjusted the width for 10 links */
+              height: auto; /* Auto height to accommodate all links */
+              box-shadow: -8px 0px 16px 0px rgba(0, 0, 0, 0.2);
+              left: -200px; /* Adjusted the left value */
+              padding: 10px; /* Added padding for better appearance */
+              border-radius: 5px; /* Rounded corners */
+          }
+
+          .buttonDropdown-content a {
+              color: white;
+              padding: 8px 0;
+              text-decoration: none;
+              display: block;
+              font-size: 16px; /* Adjusted font size */
+          }
+
+          .buttonDropdown-content a:hover {
+              background-color: #f0f0f0; /* Hover background color */
+          }
+
+          .bar1,
+          .bar2,
+          .bar3 {
+              width: 35px;
+              height: 5px;
+              background-color: #333;
+              margin: 6px 0;
+              transition: 0.4s;
+          }
+
+          .show {
+              display: block;
+          }
+
+          .change .bar1 {
+              transform: translate(0, 11px) rotate(-45deg);
+          }
+
+          .change .bar2 {
+              opacity: 0;
+          }
+
+          .change .bar3 {
+              transform: translate(0, -11px) rotate(45deg);
+          }
+
+          .main {
+         border-radius: 25px;
+  background-color: #F5F5F5;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  border: 1px solid grey;
+  padding: 10px;
+  box-shadow: 0px 0px 30px grey;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+      }
+
+      .post {
+        width: 45%; /* Adjusted width to fit two posts in a row */
+  height: 200px; /* Fixed height to maintain a square */
+  border: 1px solid #000;
+  margin: 10px;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+
+
+.post-container {
+  width: 100%; /* Adjusted width to fit two posts in a row */
+  height: 200px; /* Fixed height to maintain a square */
+  border: 1px solid #000;
+  margin: 10px;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+      </style>
+      <script>
+          function myFunction(x) {
+              x.classList.toggle("change");
+              var dropdown = document.getElementById("dropdown");
+              dropdown.classList.toggle("show");
+              if (dropdown.classList.contains("show")) {
+                  dropdown.style.left = "0";
+              } else {
+                  dropdown.style.left = "-200px"; // Adjusted the left value
+              }
+          }
+
+          function closeDropdown(event) {
+              var dropdown = document.getElementById("dropdown");
+              if (!dropdown.contains(event.target)) {
+                  // Clicked outside of the dropdown, so close it
+                  dropdown.style.left = "-200px"; // Adjusted the left value
+                  document.removeEventListener("click", closeDropdown);
+                  document.querySelector(".button").classList.remove("change");
+              }
+          }
+      </script>
+  </head>
+
+  <body>
+      <div class="button" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+
+          <div id="dropdown" class="buttonDropdown-content" onclick="event.stopPropagation();">
+              <a href="nonurseleftbehind-login.html">Account</a>
+              <a href="#">Settings</a>
+              <a href="#">Profile</a>
+              <a href="#">Notifications</a>
+              <a href="nonurseleftbehind-hushu.html">Messages</a>
+              <a href="#">Privacy</a>
+              <a href="#">Help Center</a>
+              <a href="#">Feedback</a>
+              <a href="nonurseleftbehind-main.html">About Us</a>
+              <a href="#">Logout</a>
+          </div>
+      </div>
+
+      <div class="main">
+
+
+
+<body>
+
+<div><h1>Our Mission</h1>
+
+
+
+<p>At No Nurse Left Behind, we are dedicated to nurturing the well-being and mental health of nurses, empowering them to lead fulfilling and balanced lives both personally and professionally. Our mission is to provide a safe, compassionate, and accessible online platform tailored to the unique needs of nurses, offering a range of resources and support to enhance their mental, emotional, and spiritual resilience.</p><br>
+
+<div class="picture"><img src="https://static01.nyt.com/images/2023/05/30/well/30WELL-ART-BRAIN/30WELL-ART-BRAIN-superJumbo.jpg" width="300" height="200"></div><br>
+
+<p>We strive to create a nurturing community where nurses can find solace, guidance, and encouragement to address the mental health challenges they face in their demanding roles. Our platform promotes mental health awareness, offers evidence-based practices, and fosters an atmosphere of empathy and understanding.</p><br>
+
+<div class="picture"><img src="https://i.ytimg.com/vi/RM_f5MA0qLg/maxresdefault.jpg" width="300" height="200"></div><br>
+
+<p>Through curated content, interactive forums, confidential counseling services, mindfulness practices, and educational materials, we aim to equip nurses with the tools they need to navigate the complexities of their profession while prioritizing their mental and emotional well-being. Our commitment extends beyond online interactions, advocating for systemic changes in healthcare settings to ensure a culture that values and supports the mental health of nurses.</p><br>
+
+<div class="picture"><img src="https://d7hftxdivxxvm.cloudfront.net/?height=476&quality=80&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNof4_0kNlUKSIkpNIBWZdw%2Flarge.jpg&width=640" width="300" height="200"></h1><p><br>
+
+<p>At No Nurse Left Behind, we believe that by caring for those who dedicate their lives to caring for others, we are contributing to a healthier, happier, and more compassionate world.</div><br>
+
+<div class="picture"><img src="https://d1zdxptf8tk3f9.cloudfront.net/ckeditor_assets/pictures/2987/content_artsandhealing.jpg" width="300" height="200"></div><br>
+
+<div class="post-container">
+  <div class="post">Box 1</div>
+  <div class="post">Box 2</div>
+  <div class="post">Box 3</div>
+  <div class="post">Box 4</div>
+ </div>
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+
+      <script>
+
+
+function myFunction(x) {
+
+x.classList.toggle("change");
+
+var dropdown = document.getElementById("dropdown");
+
+dropdown.classList.toggle("show");
+
+if (dropdown.classList.contains("show")) {
+
+dropdown.style.left = "0";
+
+
+// Add a click event listener to the document to close the dropdown when clicking outside of it
+
+document.addEventListener("click", closeDropdown);
+
+} else {
+
+dropdown.style.left = "-200px"; // Adjusted the left value
+
+document.removeEventListener("click", closeDropdown);
+
+}
+
+}
+
+
+function closeDropdown(event) {
+
+var dropdown = document.getElementById("dropdown");
+
+if (!event.target.closest(".button")) {
+
+// Clicked outside of the dropdown or the button, so close it
+
+dropdown.style.left = "-200px"; // Adjusted the left value
+
+document.removeEventListener("click", closeDropdown);
+
+document.querySelector(".button").classList.remove("change");
+
+}
+
+}
+
+</script>
+  </body>
+
+  </html>
